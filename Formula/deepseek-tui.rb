@@ -1,41 +1,41 @@
 class DeepseekTui < Formula
   desc "Terminal-native coding agent for DeepSeek V4"
   homepage "https://github.com/Hmbown/DeepSeek-TUI"
-  version "0.8.22"
+  version "0.8.23"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.22/deepseek-macos-arm64"
-      sha256 "8a5ab53e3ffd184e906cebc8e28bc9397b1f3ee69570a8bda808a9f6d81ecd27"
+      url "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.23/deepseek-macos-arm64"
+      sha256 "8b6fcc771a28b791eb73966333acc25e0393a2644a6c36d10aa8e9f44bb99e1d"
       resource "tui" do
-        url "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.22/deepseek-tui-macos-arm64"
-        sha256 "8eb415c3a63d27a589799024b161df257ee5726cf02dfb64f9de0044a409f6bd"
+        url "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.23/deepseek-tui-macos-arm64"
+        sha256 "1fb1f2b836fd7cbc44471f8dd98cb21b5c326f4f41dc674ca1b15a2f495cd0a8"
       end
     else
-      url "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.22/deepseek-macos-x64"
-      sha256 "3db158059c48e2b2f9f3eba169db18e758a85b92f21923f4c8a4ab3f8c97d475"
+      url "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.23/deepseek-macos-x64"
+      sha256 "762cebd51363987382c0d6732efc8519d70e3e279f9185a1170d2fa39a883915"
       resource "tui" do
-        url "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.22/deepseek-tui-macos-x64"
-        sha256 "d331d7e0ca41c32fa05c0cb2daf6d28149778dd627e9f3de59693a84069ed373"
+        url "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.23/deepseek-tui-macos-x64"
+        sha256 "f49abaad5decb9763c547dbb475be91b0ae2d711dd4af667e07abb037833c05e"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.22/deepseek-linux-arm64"
-      sha256 "2d7bc81abbabe4c39617beea6cbc9bfc3d044cf4eb8538626b8b3d36a4266afe"
+      url "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.23/deepseek-linux-arm64"
+      sha256 "2e6d079a8029427d9e1353d89aceb782db8e96ed561b159ab1a0f6d3302d6aca"
       resource "tui" do
-        url "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.22/deepseek-tui-linux-arm64"
-        sha256 "718e6fcfee8efb8bca488c5643d899cae8f26ca946da879792b6900ef54b994d"
+        url "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.23/deepseek-tui-linux-arm64"
+        sha256 "d0a02c24a8473813a8a9dc6050045b3132cd22b99b37ba98ff224b1c28816c4d"
       end
     else
-      url "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.22/deepseek-linux-x64"
-      sha256 "324af04a1162351779ac96be5b6348567fd91197cff90b39a14ce06754536e2e"
+      url "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.23/deepseek-linux-x64"
+      sha256 "2a622c1b9683f18a87c807e93b5561fa92e7fde2e1f1c0e34f329f8b1ed4a139"
       resource "tui" do
-        url "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.22/deepseek-tui-linux-x64"
-        sha256 "5c41ff289765e992df00ed515000b519d83e2eb5887ea54b78aa544f0a301615"
+        url "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.23/deepseek-tui-linux-x64"
+        sha256 "3ae654cf32dd1ed2c1966f1f861df9cce83ca583e7f584082b7a52a92bec7b6f"
       end
     end
   end
