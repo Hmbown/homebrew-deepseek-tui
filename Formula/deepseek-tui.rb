@@ -1,73 +1,73 @@
 class DeepseekTui < Formula
   desc "Terminal-native coding agent for DeepSeek V4"
   homepage "https://github.com/Hmbown/CodeWhale"
-  version "0.8.48"
+  version "0.8.49"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.48/codewhale-macos-arm64", using: :nounzip
-      sha256 "c3bfc951181f2432d66a242ecf8a7ad74402f6dd80a570863cc84f5e7a372607"
+      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.49/codewhale-macos-arm64", using: :nounzip
+      sha256 "918f6a49bbb33186610cde7cbe4be4955f72467e6d259a6e4471686702c0fecd"
       resource "tui" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.48/codewhale-tui-macos-arm64", using: :nounzip
-        sha256 "15e534493e017ec439647177110a0fbe89ef34d518d8b91f3381abdca5cab286"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.49/codewhale-tui-macos-arm64", using: :nounzip
+        sha256 "d443ffec4c564205e721a97087caafda275ca8f90f32c6b0a02b622df0610d5f"
       end
       resource "legacy-shim" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.48/deepseek-macos-arm64", using: :nounzip
-        sha256 "c00fe3f679ea0313ad8255e806b40676fecf02eb34072862725a793f18859611"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.49/deepseek-macos-arm64", using: :nounzip
+        sha256 "660756af16bddc79fc9a2d89851d34d0c3b751614e65addf13b87fe7ad601651"
       end
       resource "legacy-tui-shim" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.48/deepseek-tui-macos-arm64", using: :nounzip
-        sha256 "14f3caf8c308fac0836add0b09c066c7377f2bd2f833e37010376aa9edd9fdf2"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.49/deepseek-tui-macos-arm64", using: :nounzip
+        sha256 "1b2d881d3c62b9cf4ebc61ac7fbd619dec78aa7fcabbf9f1f83b62e606f2bdd9"
       end
     else
-      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.48/codewhale-macos-x64", using: :nounzip
-      sha256 "dbfdbf5acb99b2c3dae45c5f6372c0a56d8ae67cd7214f2048263f681cdbbb6c"
+      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.49/codewhale-macos-x64", using: :nounzip
+      sha256 "e8b660f21f67c64b760d6db0ec4fcface5a9fa8807e29d6c879e0e502867c9a2"
       resource "tui" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.48/codewhale-tui-macos-x64", using: :nounzip
-        sha256 "b775273d2bf6e1762df6c6d43d50d15222da888d2575fa7713a7af272d861542"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.49/codewhale-tui-macos-x64", using: :nounzip
+        sha256 "a73a700c6d4609a04195620d9b349a91aaab1fe91099d322e9459f4a8ed32ebd"
       end
       resource "legacy-shim" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.48/deepseek-macos-x64", using: :nounzip
-        sha256 "b63c64cffd3ccbe4c3cf587e0bad4c4f386cd6aea975795af458929dd632a8c0"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.49/deepseek-macos-x64", using: :nounzip
+        sha256 "9020d63c81468edab1843cbe6129843873e77d2b1ba465250c21d0cc3d9cca39"
       end
       resource "legacy-tui-shim" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.48/deepseek-tui-macos-x64", using: :nounzip
-        sha256 "a8a095c5aefa836da25b073ea16c3313ba0f5efb8c6ba70fe5076cc8a7f5c774"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.49/deepseek-tui-macos-x64", using: :nounzip
+        sha256 "de6e1c44eb57aee0d0cdf8bdaa819e65e5dcd720ae84ac099f961a2b7e1cc9ec"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.48/codewhale-linux-arm64", using: :nounzip
-      sha256 "0506302fc2f58d33d5ca170d7dc624018c6a4eeb37691b2fa8d2c7047e596d38"
+      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.49/codewhale-linux-arm64", using: :nounzip
+      sha256 "394fdaa93c48233be54b784098a90c9a18db5cf4bac795ac46402de46f49d745"
       resource "tui" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.48/codewhale-tui-linux-arm64", using: :nounzip
-        sha256 "f418aa1fb7ae0a7799066f0bbd4753007d09c9f9d1645eddf466e2214babbd9c"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.49/codewhale-tui-linux-arm64", using: :nounzip
+        sha256 "b4242be6999b473f701e9b7274a6e3a1318884a1689bea6a08a697e318b13fb6"
       end
       resource "legacy-shim" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.48/deepseek-linux-arm64", using: :nounzip
-        sha256 "5135d16f104cdb5cb37f0d898959657706a29b8e01acc34f438a5969396bc32d"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.49/deepseek-linux-arm64", using: :nounzip
+        sha256 "d80d6537fe285040ea3875a57fe59155b05c3b947852c099e7d4161f4aa2bfd1"
       end
       resource "legacy-tui-shim" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.48/deepseek-tui-linux-arm64", using: :nounzip
-        sha256 "d788a097a057b892f15c728d0da1cfe15d20d440ec2576a0c47695fd80a5e1fa"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.49/deepseek-tui-linux-arm64", using: :nounzip
+        sha256 "725eeca50c39c66c40e07e75eb699f0fdd92a97de20b84a538040b5943a3bbd4"
       end
     else
-      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.48/codewhale-linux-x64", using: :nounzip
-      sha256 "3ff5f9b4dee908c1aad37931d347c6bc4992e428d1dadd9941c247b3e9230443"
+      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.49/codewhale-linux-x64", using: :nounzip
+      sha256 "f7bce4e0bcda86ca55a9df14fd9f2b7d2eb4a0e58d50fb169f8c6d9ffacbf024"
       resource "tui" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.48/codewhale-tui-linux-x64", using: :nounzip
-        sha256 "284f2c314ad4d12135aa4feb2dd204e057ed84a5d01cd2a79b27e67b3f9198f0"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.49/codewhale-tui-linux-x64", using: :nounzip
+        sha256 "b5cfecdded68a262617d810dd44b6e12d3c117bedd072acc8a60c7ddb4226c22"
       end
       resource "legacy-shim" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.48/deepseek-linux-x64", using: :nounzip
-        sha256 "b38b8c5e8daada0551d7e48c144a6ce8834164f38c8de07f3ff36948f6905fae"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.49/deepseek-linux-x64", using: :nounzip
+        sha256 "8818a4933902b4f622f14fd345cff7015cd602bba9735a0b3efabb203f391977"
       end
       resource "legacy-tui-shim" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.48/deepseek-tui-linux-x64", using: :nounzip
-        sha256 "76b33a484d4b9e43e4ba4521464ac991a8ab623c7b8ffc39eb48ecc2706874c5"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.49/deepseek-tui-linux-x64", using: :nounzip
+        sha256 "e92a06d6ab4cbcba5cedf94fa47ffa6b55a1f6f5d7a0b026797b04d87ef65034"
       end
     end
   end
