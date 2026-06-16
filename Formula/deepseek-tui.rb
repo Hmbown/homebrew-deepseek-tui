@@ -1,41 +1,41 @@
 class DeepseekTui < Formula
   desc "Terminal-native coding agent for DeepSeek V4"
   homepage "https://github.com/Hmbown/CodeWhale"
-  version "0.8.60"
+  version "0.8.61"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.60/codewhale-macos-arm64", using: :nounzip
-      sha256 "3e923b2c57e1dc0ba91bae9bd65b96985894d5362ff49a8438bb9537ccdc0890"
+      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.61/codewhale-macos-arm64", using: :nounzip
+      sha256 "9575fe30c7a3eed44c20fa0a98cdc789b61eeea6982842c9c01a5ffc27b40f5b"
       resource "tui" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.60/codewhale-tui-macos-arm64", using: :nounzip
-        sha256 "3dab191401e96e8ce969d3035173f28561e8f82cb18892f52bd1075865bd74f9"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.61/codewhale-tui-macos-arm64", using: :nounzip
+        sha256 "ab879eba62099ccad848e7e8603ba668af215a38327804cfd7436e82c38ea364"
       end
     else
-      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.60/codewhale-macos-x64", using: :nounzip
-      sha256 "72522cacd43c624f3d7f0ef428338dc0d82ed51e6daaa88c7d99474c7eddc985"
+      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.61/codewhale-macos-x64", using: :nounzip
+      sha256 "1d6f09946152920b3310da7fb2628ddeff55abb3bcc5255626c9bf1dfbfbe5b0"
       resource "tui" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.60/codewhale-tui-macos-x64", using: :nounzip
-        sha256 "5d5a51cb11ed751d03fa3dcc07a6836403a1cc37bfbdfa2f6b1e40d4e5bb9fda"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.61/codewhale-tui-macos-x64", using: :nounzip
+        sha256 "902437f022517a675d15c96fbda31f4df2291e85e83304b2465c465e0979e8d6"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.60/codewhale-linux-arm64", using: :nounzip
-      sha256 "c634f08814275c9c3ec29790c0d0f75f34b56bd8d33ae1b471abd22913b94e2d"
+      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.61/codewhale-linux-arm64", using: :nounzip
+      sha256 "085b201eb76cbaa7ace7f209abec4110a366b3b7d694899166aeb3a1f8ded9c7"
       resource "tui" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.60/codewhale-tui-linux-arm64", using: :nounzip
-        sha256 "faf982c8306187c68139d3e7f12caa46916e526b84a5e664f2c696428d2cc059"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.61/codewhale-tui-linux-arm64", using: :nounzip
+        sha256 "e78feae276e4672d67773e7fc207dbc2df8403a6926bafb35b5e958824cc96fc"
       end
     else
-      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.60/codewhale-linux-x64", using: :nounzip
-      sha256 "26a941c84947a0b711d8c9709b1e507337e3f84a00a7e8a074b09dfd050eb17e"
+      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.61/codewhale-linux-x64", using: :nounzip
+      sha256 "de4d0afc8fcdc581eb36cce09e24277164eef0746ab11dd14a0f982ee07e2246"
       resource "tui" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.60/codewhale-tui-linux-x64", using: :nounzip
-        sha256 "2d37faf35716547f42bb74d0ac578c94950d5551be4d6c4eda823a5572bee330"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.8.61/codewhale-tui-linux-x64", using: :nounzip
+        sha256 "6158ca0cefc9367b001f0cc27f88adac4c3ca6c2b28bd6db15a2c92c5bccc802"
       end
     end
   end
