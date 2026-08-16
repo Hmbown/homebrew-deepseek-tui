@@ -1,9 +1,8 @@
-class DeepseekTui < Formula
+class Codewhale < Formula
   desc "Agentic terminal for open-source and open-weight coding models"
   homepage "https://github.com/Hmbown/CodeWhale"
   version "0.9.8"
   license "MIT"
-  deprecate! date: "2026-08-14", because: "renamed to codewhale"
 
   on_macos do
     if Hardware::CPU.arm?
