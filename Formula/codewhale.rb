@@ -7,17 +7,17 @@ class Codewhale < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.11/codewhale-macos-arm64", using: :nounzip
-      sha256 "dbbb2c51711693e5cc07cb55ef0b9ad4d464c3d14a825292668fef39c2a54bb7"
+      sha256 "6a1082bb9a8994e547a86fab613eb47177996141d81d25b34c0e9d1ceeabd2cd"
       resource "codew" do
         url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.11/codew-macos-arm64", using: :nounzip
-        sha256 "dbbb2c51711693e5cc07cb55ef0b9ad4d464c3d14a825292668fef39c2a54bb7"
+        sha256 "6a1082bb9a8994e547a86fab613eb47177996141d81d25b34c0e9d1ceeabd2cd"
       end
     else
       url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.11/codewhale-macos-x64", using: :nounzip
-      sha256 "7d105d194ccdf8eb6cda0e8fe216806a5203e4cdf2e757584b3c29e354482e99"
+      sha256 "652f02820bf642236dbf12986eb355ead16ddae916dbfd292b24d731cbdd4c12"
       resource "codew" do
         url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.11/codew-macos-x64", using: :nounzip
-        sha256 "7d105d194ccdf8eb6cda0e8fe216806a5203e4cdf2e757584b3c29e354482e99"
+        sha256 "652f02820bf642236dbf12986eb355ead16ddae916dbfd292b24d731cbdd4c12"
       end
     end
   end
@@ -25,17 +25,17 @@ class Codewhale < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.11/codewhale-linux-arm64", using: :nounzip
-      sha256 "5512dba3105f86c2e6ec0092684cb830e19147b2fcd96db6678cff78a5a5ea13"
+      sha256 "60a14551e994747a4f4ddb779b9c21c6d75aa3e7fdf84515543748450aa48f18"
       resource "codew" do
         url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.11/codew-linux-arm64", using: :nounzip
-        sha256 "5512dba3105f86c2e6ec0092684cb830e19147b2fcd96db6678cff78a5a5ea13"
+        sha256 "60a14551e994747a4f4ddb779b9c21c6d75aa3e7fdf84515543748450aa48f18"
       end
     else
       url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.11/codewhale-linux-x64", using: :nounzip
-      sha256 "82d034dac37693fff3bfb9b80afbb00c26d7a5bddd520c3878ad3780ba696b17"
+      sha256 "c02969556e51e138afa3fe9c97a1359878cd3d1986b1ce1f5fa96c93c6909416"
       resource "codew" do
         url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.11/codew-linux-x64", using: :nounzip
-        sha256 "82d034dac37693fff3bfb9b80afbb00c26d7a5bddd520c3878ad3780ba696b17"
+        sha256 "c02969556e51e138afa3fe9c97a1359878cd3d1986b1ce1f5fa96c93c6909416"
       end
     end
   end
