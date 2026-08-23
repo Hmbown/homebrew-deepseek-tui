@@ -1,42 +1,42 @@
 class DeepseekTui < Formula
   desc "Agentic terminal for open-source and open-weight coding models"
   homepage "https://github.com/Hmbown/CodeWhale"
-  version "0.9.10"
+  version "0.9.11"
   license "MIT"
   deprecate! date: "2026-08-14", because: "renamed to codewhale"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.10/codewhale-macos-arm64", using: :nounzip
-      sha256 "3403e8bc2b128eeff1d9f150cab99ab20523252d83b6822201540bd14d06604e"
+      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.11/codewhale-macos-arm64", using: :nounzip
+      sha256 "dbbb2c51711693e5cc07cb55ef0b9ad4d464c3d14a825292668fef39c2a54bb7"
       resource "codew" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.10/codew-macos-arm64", using: :nounzip
-        sha256 "3403e8bc2b128eeff1d9f150cab99ab20523252d83b6822201540bd14d06604e"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.11/codew-macos-arm64", using: :nounzip
+        sha256 "dbbb2c51711693e5cc07cb55ef0b9ad4d464c3d14a825292668fef39c2a54bb7"
       end
     else
-      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.10/codewhale-macos-x64", using: :nounzip
-      sha256 "8dd44a65ab102b487197682f4a04337f7362a023a16674357544f21c7c35f7f7"
+      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.11/codewhale-macos-x64", using: :nounzip
+      sha256 "7d105d194ccdf8eb6cda0e8fe216806a5203e4cdf2e757584b3c29e354482e99"
       resource "codew" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.10/codew-macos-x64", using: :nounzip
-        sha256 "8dd44a65ab102b487197682f4a04337f7362a023a16674357544f21c7c35f7f7"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.11/codew-macos-x64", using: :nounzip
+        sha256 "7d105d194ccdf8eb6cda0e8fe216806a5203e4cdf2e757584b3c29e354482e99"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.10/codewhale-linux-arm64", using: :nounzip
-      sha256 "23dd8dbbd8abcff4c8fe46b756b02cbfd558987e1397146470ceb09ee5c59b22"
+      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.11/codewhale-linux-arm64", using: :nounzip
+      sha256 "5512dba3105f86c2e6ec0092684cb830e19147b2fcd96db6678cff78a5a5ea13"
       resource "codew" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.10/codew-linux-arm64", using: :nounzip
-        sha256 "23dd8dbbd8abcff4c8fe46b756b02cbfd558987e1397146470ceb09ee5c59b22"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.11/codew-linux-arm64", using: :nounzip
+        sha256 "5512dba3105f86c2e6ec0092684cb830e19147b2fcd96db6678cff78a5a5ea13"
       end
     else
-      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.10/codewhale-linux-x64", using: :nounzip
-      sha256 "ed02522881d503dfa3b21dcb943c1320862c3a347ab573b170f1d82f91f1014b"
+      url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.11/codewhale-linux-x64", using: :nounzip
+      sha256 "82d034dac37693fff3bfb9b80afbb00c26d7a5bddd520c3878ad3780ba696b17"
       resource "codew" do
-        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.10/codew-linux-x64", using: :nounzip
-        sha256 "ed02522881d503dfa3b21dcb943c1320862c3a347ab573b170f1d82f91f1014b"
+        url "https://github.com/Hmbown/CodeWhale/releases/download/v0.9.11/codew-linux-x64", using: :nounzip
+        sha256 "82d034dac37693fff3bfb9b80afbb00c26d7a5bddd520c3878ad3780ba696b17"
       end
     end
   end
